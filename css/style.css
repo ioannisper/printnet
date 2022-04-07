@@ -1,0 +1,611 @@
+/* TABLE OF CONTENTS */
+/* ------------------
+1. General
+2. Navbar
+
+-------------------- */
+
+/* 1 General */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+/* From "Digital Marketing" */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/*My own (ioannispe) fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;1,400&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Background Color */
+    --primary-color: #e81922;
+    --secondary-color: #333333;
+    --bg-black: #111111;
+    --bg-dark: #1C1819;
+    --bg-white: #fff;
+    --bg-gray: #e5e5e5;
+    --bg-light-2:#f2f7fa;
+    --bg-dark-green:#0e9d80;
+
+    /* Text Color */
+    --primary-text: #e81922;
+    --text-white: #fff;
+    --text-black: #111111;
+    --text-dark-green:#12c4a0;
+    --text-light-2:#798089;
+    --text-orange:#ff5d2a;
+
+    /* Font Family */
+    --primary-font: 'Ubuntu', sans-serif;
+    --primary-font2: 'Ubuntu Condensed';
+    --primary-font3: 'Roboto Condensed';
+    --secondary-font: 'Open Sans', sans-serif;
+    --secondary-font2: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--secondary-font);
+    background-color: var(--bg-white);
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 1 Custom CSS */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+section {
+    padding: 100px 0;
+}
+
+.main-btn {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 5px 27px 5px 5px;
+    border: 1px solid var(--primary-color); 
+    color: var(--primary-text);
+    font-weight: 600;
+    font-size: 14px;
+    
+    text-transform: uppercase;
+    letter-spacing: 1px;   
+    background:linear-gradient(to right, var(--primary-color) 50%, transparent 50%);
+    background-size:200% 100%;
+    background-position: right bottom;
+    transition:all 0.5s ease-out;
+} 
+.main-btn:hover {
+    color: var(--text-white);  
+    background-position: left bottom; 
+} 
+
+h1 {
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--text-black);
+    margin-bottom: 20px;
+    font-family: var(--primary-font);
+}
+
+h1 span {
+    color: var(--primary-color);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: var(--text-black);
+    font-family: var(--primary-font2);
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--text-black);
+    font-family: var(--primary-font);
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--primary-text);
+}
+
+p {
+    color: var(--text-black);
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    font-weight: 300;
+}
+
+
+/* 2 Navbar */
+.header_wrapper .navbar {
+    /*padding: 15px 0;  */
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    background-color: var(--bs-light); 
+   /* background-color:#B0DDEE; */
+}
+
+.header_wrapper .navbar-brand img {
+    max-width: 120px;
+    height: auto;
+}
+
+.header_wrapper .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.header_wrapper .nav-item {
+    margin: 0 10px;
+}
+
+.header_wrapper .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: normal;
+    color: var(--text-black);
+    display: inline-block;
+}
+
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover {
+    color: var(--primary-text);
+}
+
+.header-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-white);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+}
+
+
+
+/* 4 About 
+.about_wrapper {
+    background-color: var(--bg-gray);
+    padding-bottom: 130px;
+}
+
+.about_wrapper .card {
+    z-index: 10;
+    right: -25%;
+    top: 30%; 
+}  */
+
+
+
+
+
+
+
+
+<!--Responsive Design-->
+@media (max-width: 1199px) {
+   
+    /* custom css */
+    h1 {
+        font-size: 65px;
+    }
+}
+
+@media (max-width:991px) {
+
+    /* custom css */ 
+
+    h2 {
+        /*font-size: 30px; */
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:1199px) {
+
+    /* 2 Navbar */
+    .header_wrapper .navbar-brand img {
+        max-width: 80px;
+    }
+
+    .header-scrolled {
+        height: auto;
+    }
+    .header_wrapper .navbar-collapse{
+        margin-top:-2px;
+    }
+    .header_wrapper .menu-navbar-nav {
+        text-align: center;
+        background-color: var(--bg-white);
+        padding-bottom: 15px; 
+    }
+
+    .header_wrapper .nav-item .nav-link {
+        margin-top: 15px;
+    }
+
+    .header_wrapper .navbar-brand img {
+        max-width: 67px;
+        height: auto;
+    }
+
+    /* banner */
+    .banner_wrapper {
+        padding-top: 70px;
+    }
+
+    .banner_wrapper .top-menu .card {
+        height: 200px;
+    }
+
+    /* About 
+    .about_wrapper {
+        padding-bottom: unset;  
+    }
+
+    .about_wrapper .card {
+        z-index: 10;
+        right: unset;
+        top: unset;  
+    } */
+
+}
+
+@media (max-width: 767px) {
+
+    /* custom css */
+    h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    /* Menu */
+    .menu_wrapper .row {
+        padding-top: 70px;
+    }
+
+    .menu_wrapper .card h3 span {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+    }
+
+    /* offers */
+    .offers_wrapper .card .offer-text {
+        width: 65%;
+    }
+
+    /* review */
+    .carousel-caption {
+        bottom: 0;
+    }
+
+    .review_wrapper .carousel-item {
+        min-height: 460px;
+    }
+}
+
+        
+/*******************************************************************  */  
+/*******************************************************************  */
+/*******************************************************************  */
+/*******************************************************************  */
+
+/* 5 About from "Digital Marketing" */
+.about_wrapper{
+    padding:100px 0 0; 
+}
+.about_number{
+    font-family: var(--secondary-font2);
+    font-weight: 800;
+    font-size: 24px;
+    padding: 4px 17px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    max-width: 44px;
+    color: var(--text-white);
+    background-color: var(--bg-dark-green);
+}
+.about_title {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 1.25;
+    max-width: 1000px;
+    margin-bottom: 25px;
+    color: var(--text-black);
+}
+
+/* ioannispe class */
+.about_title2 {
+    font-family: var(--primary-font2);
+    font-weight: normal;
+    font-size: 93px;
+    line-height: 1.25;
+    max-width: 1000px;
+    margin-bottom: 25px;
+    color: var(--bs-success);
+}
+
+
+.about_text{ 
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.7;
+    max-width: 700px;
+    color:var(--text-light-2);
+}
+.innovate{
+   /* background:var(--bg-light-2); */
+    background-color:#B0DDEE;
+    padding:0px 0; 
+    font-family:var(--primary-font2);
+    margin-top:104px;
+}
+
+
+.learn-more-btn { 
+    background-color:var(--bs-success);
+    font-size: 25px; 
+    font-weight: 700;
+    color: var(--text-white) !important;
+    padding: 12px 29px !important;
+    border-radius: 10px;
+    border: 2px solid var(--bs-brimary);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%); 
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+@media (max-width:1610px){
+   
+    /* ioannispe */
+    .about_title2{
+        font-size: 60px;
+    }
+}
+
+
+@media (max-width:1080px){
+   
+    /* ioannispe */
+    .about_title2{
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width:991px){
+    
+    /* 5 About */
+    .about_number{
+        margin:20px auto;
+    }
+    
+    /*ioannispe
+    .about_title2{
+        font-size: 24px;
+    } */
+}
+
+@media (max-width:450px){
+   
+    /* ioannispe */
+    .about_title2{
+        font-size: 35px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:1199px){
+ 
+/* ioannispe */
+.innovate{
+    margin-top:73px;
+}
+    /* ioannispe 
+    .navbar{
+        padding-bottom: 40px;
+    }*/
+}
+
+
+
+/*********************************************************************************************** */
+/************************************************************************************************ */
+/* From Hotel (Code4E)  */
+
+
+.price_wrapper .card {
+    box-shadow: 0 .125rem .25rem rgb(34 30 31 / 40%);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+   
+h5 {
+        font-size: 1.5rem;
+        line-height: 1;
+        color: var(--primary-text);
+        margin-bottom: .9375rem;
+        font-weight: 500;
+        font-family: var(--secondary-font);
+    }
+
+
+    /* ioannispe *********************************************/
+.main-btn2{
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--primary-color);
+        text-transform: uppercase;
+        background-color: transparent;
+        border: .0625rem solid var(--primary-color);
+        padding: .375rem 1.875rem;
+        border-radius: 3.125rem;
+        line-height: 1.75rem;
+        display: inline-block;
+        transition: all 0.3s ease-out 0s;
+    }
+    
+.card-body {
+padding-top: 2px;
+padding-bottom: 3px;
+}
+
+    /* ioannispe tables***************************************/
+.table1 {
+    padding: 0px 20%;
+}
+
+.table2 {
+    padding:0px 7%;
+}
+
+th {
+    color:brown;
+    font-weight:450;
+}
+    /* ioannispe end tables***************************************/
+
+
+.card-header {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+    /* ioannispe text on b/w photo***************************************/
+.texton{
+    position:absolute;
+    left:0px;
+    top: 0px;
+    font-family: Roboto Condensed;
+    font-weight:700;
+    font-size:45px;
+    text-shadow: 2px 2px black;
+    letter-spacing:1px;
+    color:khaki;
+}
+
+    /* ioannispe car********************************************/
+.car {
+    width:200px; 
+    height:100px;
+}
+
+.anim {
+    position:relative;
+    animation-name:example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    }
+
+    #div1 {animation-timing-function: linear;}
+    #div2 {animation-timing-function: ease;}
+    #div3 {animation-timing-function: ease-in;}
+    #div4 {animation-timing-function: ease-out;}
+    #div5 {animation-timing-function: ease-in-out;}
+
+    
+
+@keyframes example {
+  0%   { left:-100px; top:150px;}
+  /*25%  { left:200px; top:150px;}*/
+  /*50%  { left:200px; top:200px;}*/
+  /*75%  {left:0px; top:200px;}*/
+  100% { left:100%; top:150px;} 
+}
+
+@media (max-width:768px){
+   
+    /* ioannispe */
+    .car{
+    width:100px; 
+    height:50px;
+    }
+}
+
+    /* ioannispe - girl on banner*****************************/
+.girl {
+    padding-left:50px;
+    padding-right:50px
+}
+
+@media (max-width:991px) {
+   
+    /* ioannispe */
+    .girl{
+    padding-left:150px;
+    padding-right:150px;
+    }
+}
+
+@media (max-width:650px) {
+   
+    /* ioannispe */
+    .girl{
+    padding-left:50px;
+    padding-right:50px;
+    }
+}
+/* ioannispe - end girl on banner***********************************/
+
+.product_categ {
+    border-radius: 15px;
+    padding: 22px 50px 15px 50px;
+    margin:50px auto;
+    background-color: var(--bg-gray);
+    box-shadow: 5px 5px 10px rgba(39, 39, 39, 0.726);
+    max-width:70%;
+    text-align: center;
+} 
